@@ -22,13 +22,13 @@ const SideNav = () => {
           <div className="my-8">
             <span className="text-xl font-bold text-[#F5B6D9]">cosypos</span>
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-4">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 href={item.path}
-                className={`flex flex-col items-center ${
-                  pathname === item.path ? "opacity-100" : "opacity-70"
+                className={`flex flex-col items-center p-2 rounded-lg ${
+                  pathname === item.path ? "opacity-100 bg-[#F5B6D9] text-black" : "opacity-70"
                 }`}
               >
                 <img
@@ -36,7 +36,7 @@ const SideNav = () => {
                   alt={item.label}
                   className="p-2 bg-white rounded-full"
                 />
-                <p className="text-white mt-1 text-md">{item.label}</p>
+                <p className={` mt-1 text-base font-medium ${pathname === item.path ? "text-black" : ""}`}>{item.label}</p>
               </Link>
             ))}
           </div>
