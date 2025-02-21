@@ -122,7 +122,7 @@ export default function Home() {
                 <Link href="/dashboard">
                   <Button
                     type="submit"
-                    className="w-1/3 py-7 bg-white text-[#333333]"
+                    className="w-[120px] py-7 bg-white text-[#333333]"
                   >
                     Login
                   </Button>
